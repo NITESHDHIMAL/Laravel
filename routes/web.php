@@ -26,6 +26,15 @@ Route::get('/hello', function () {
 // });
 
 Route::get('/hello', 'App\Http\Controllers\myController@index' );
+
+
+
+// To show addproduct form
+
+Route::get('/addproduct', 'App\Http\Controllers\myController@showproductform');
+
+
+
     
 
 

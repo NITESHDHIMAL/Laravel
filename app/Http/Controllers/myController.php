@@ -11,10 +11,20 @@ class myController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
     public function index()
     {
         return view('firstpage');
     }
+
+ 
+  public function showproductform(){
+         return view ("addproduct");  
+     }
+
+
 
     /**
      * Show the form for creating a new resource.
