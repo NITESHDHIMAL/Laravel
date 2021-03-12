@@ -33,6 +33,20 @@ Route::get('/hello', 'App\Http\Controllers\myController@index' );
 
 Route::get('/addproduct', 'App\Http\Controllers\myController@showproductform');
 
+// To insert a product
+Route::post('/storeproduct','App\Http\Controllers\myController@store')->name('storeproduct'); //->tenets to
+
+// To show data
+Route::get('/showproduct','App\Http\Controllers\myController@show')->name('showproduct');
+
+// To show data in homepage
+Route::get('/homepage','App\Http\Controllers\myController@homepage')->name('homepage');
+
+//To delete product data
+Route::get('/deletedata/{id}','App\Http\Controllers\myController@destroy')->name('delete');
+
+//To edit a product
+Route::get('/edit/{id}','App\Http\Controllers\myController@edit')->name('editproduct');
 
 
     
